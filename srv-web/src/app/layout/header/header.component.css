@@ -1,0 +1,22 @@
+.header-toolbar {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background-color: #37474f;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  box-shadow: black 0.1em 0.1em 0.2em;
+  color: white;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+  color: white;
+  font-family: impact;
+  font-size: 50px;
+}
+
+.logo {
+  height: 60px;
+  width: 100px;
+}

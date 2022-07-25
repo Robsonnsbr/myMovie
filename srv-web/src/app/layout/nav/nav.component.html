@@ -1,0 +1,39 @@
+<div class="nav-list">
+  <a class="itens" routerLink="/" mat-button><mat-icon>home</mat-icon>Home</a>
+  <a class="itens" routerLink="/catalogo" mat-button
+    ><mat-icon>local_movies</mat-icon>Filmes</a
+  >
+  <a
+    class="itens"
+    routerLink="/cadastros"
+    *ngIf="authService.isAdmin()"
+    mat-button
+    ><mat-icon>auto_awesome_motion</mat-icon>Cadastros</a
+  >
+  <a
+    class="itens"
+    routerLink="/login"
+    *ngIf="!authService.isAutenticado()"
+    mat-button
+    class="login"
+    ><mat-icon>login</mat-icon></a
+  >
+  <a
+    class="itens"
+    readonly="readonly"
+    *ngIf="authService.isAutenticado()"
+    mat-button
+    ><mat-icon>account_circle</mat-icon> Usuário Logado:
+    {{ authService.usuarioLogado.nome }}</a
+  >
+  <a
+    class="itens"
+    (click)="logout()"
+    *ngIf="authService.isAutenticado()"
+    mat-button
+    ><mat-icon>logout</mat-icon></a
+  >
+  <a class="itens" routerLink="/sobre" mat-button
+    ><mat-icon>info</mat-icon>Sobre</a
+  >
+</div>

@@ -1,0 +1,43 @@
+<div class="tituloListas">
+  <h1>Excluir produto</h1>
+</div>
+<form>
+  <mat-card>
+    <mat-card-content>
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          disabled
+          placeholder="Nome"
+          name="nome"
+          [(ngModel)]="produto.nome"
+        />
+      </mat-form-field>
+      <div>
+        <label for="imgFoto">Imagem</label>
+        <img
+          id="imgFoto"
+          disabled
+          style="cursor: pointer"
+          (click)="fileUpload.click()"
+          src="{{ URL_SERVIDOR_UPLOAD_FOTO + produto.foto }}"
+        />
+        <input
+          type="file"
+          disabled
+          style="display: none"
+          id="fileUpload"
+          #fileUpload
+          class="file-upload"
+        />
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="excluir(produto)" color="warn">
+        Excluir
+      </button>
+      <button mat-raised-button routerLink="/cadastros">Cancelar</button>
+    </mat-card-actions>
+  </mat-card>
+</form>

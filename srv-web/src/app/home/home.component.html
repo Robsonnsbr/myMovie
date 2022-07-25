@@ -1,0 +1,25 @@
+<section class="home-filme">
+  <div class="zoom">
+    <img
+      src="{{ URL_SERVIDOR_UPLOAD_FOTO + produto.foto }}"
+      alt="Filme da Semana"
+    />
+  </div>
+
+  <span class="home-filme-conteudo">
+    <h2 class="home-filme-secao">FILME DA SEMANA</h2>
+    <h1 class="home-filme-titulo">{{ produto.nome }}</h1>
+    <mat-icon class="star-checked">star</mat-icon>
+    <mat-icon class="star-checked">star</mat-icon>
+    <mat-icon class="star-checked">star</mat-icon>
+    <mat-icon class="star-checked">star</mat-icon>
+    <mat-icon class="star">star</mat-icon>
+    <h2 class="home-filme-descricao">Descrição do Filme</h2>
+    <p class="home-filme-texto">
+      Lançamento: {{ produto.descricao.dataLancamento }}
+    </p>
+    <p class="home-filme-texto">Genêro: {{ produto.descricao.genero }}</p>
+    <p class="home-filme-texto">Direção: {{ produto.descricao.direcao }}</p>
+    <p class="home-filme-texto">Elenco: {{ produto.descricao.elenco }}</p>
+  </span>
+</section>

@@ -1,0 +1,110 @@
+[
+    {
+        "codigo": 1,
+        "nome": "Águas Selvagens ",
+        "descricao": {
+            "dataLancamento": "2022",
+            "genero": "Ação, Crime",
+            "direcao": "Roly Santos",
+            "elenco": "Roberto Birindelli: Lucio Gualtieri, Mayana Neiva: Rita Azucena de Benitez, Allana Lopes: Blanca, Mario José Paz: Dr. Dieguez"
+        },
+        "foto": "aguasSelvagens.jpg",
+        "categoria": 1
+    },
+    {
+        "codigo": 2,
+        "nome": "Jurassic World",
+        "descricao": {
+            "dataLancamento": "2022",
+            "genero": "Aventura, Ação, Ficção, científica",
+            "direcao": "Colin Trevorrow",
+            "elenco": "Chris Pratt: Owen Grady,Bryce Dallas Howard: Laura Dern: Dr. Ellie Sattler"
+        },
+        "foto": "jurassicWorld.jpg",
+        "categoria": 2
+    },
+    {
+        "codigo": 3,
+        "nome": "Minions 2",
+        "descricao": {
+            "dataLancamento": "2022",
+            "genero": "Ação, Drama",
+            "direcao": "Joseph Kosinski",
+            "elenco": "Steve Carell: Gru (voice), Pierre Coffin Kevin / Stuart / Bob / Minions (voice), Russell Brand Dr. Nefario (voice)"
+        },
+        "foto": "minions.jpg",
+        "categoria": 1
+    },
+    {
+        "codigo": 4,
+        "nome": "Top Gun: Maverick",
+        "descricao": {
+            "dataLancamento": "2022",
+            "genero": "Família, Animação, Aventura, Comédia, Fantasia",
+            "direcao": "Kyle Balda",
+            "elenco": "Tom Cruise: Capt. Pete 'Maverick' Mitchell Miles Teller Miles Teller: Lt. Bradley 'Rooster' Bradshaw"
+        },
+        "foto": "topGun.jpg",
+        "categoria": 3
+    },
+    {
+        "codigo": 5,
+        "nome": "2000 Mules",
+        "descricao": {
+            "dataLancamento": "2022",
+            "genero": "Documentário",
+            "direcao": "Dinesh D'Souza",
+            "elenco": "Dinesh D'Souza: Self / Narrator, Catherine Engelbrecht: Self, Larry Elder: Larry Elder"
+        },
+        "foto": "2000Mules.jpg",
+        "categoria": 5
+    },
+    {
+        "codigo": 6,
+        "nome": "A Super Máquina 2000",
+        "descricao": {
+            "dataLancamento": "1991",
+            "genero": "Ação, Ficção científica, Cinema TV",
+            "direcao": "Dinesh D'Souza",
+            "elenco": "David Hasselhoff: Michael Knight, Edward Mulhare: Devon Miles,Susan Norman: Officer Shawn McCormick"
+        },
+        "foto": "superMaquina.jpg",
+        "categoria": 9
+    },
+    {
+        "codigo": 7,
+        "nome": "20.000 Léguas Submarinas",
+        "descricao": {
+            "dataLancamento": "1997",
+            "genero": "Aventura, Ação, Ficção científica",
+            "direcao": "Michael Anderson",
+            "elenco": "Richard Crenna: Professor Aronnax, Ben Cross: Capt. Nemo, Julie Cox: Sophie"
+        },
+        "foto": "20.000LéguasSubmarinas.jpg",
+        "categoria": 9
+    },
+    {
+        "codigo": 8,
+        "nome": "Anos 2000: Grandes Tragédias",
+        "descricao": {
+            "dataLancamento": "2015",
+            "genero": "Documentário",
+            "direcao": "Jill Cumberbatch",
+            "elenco": "Richard Crenna: Professor Aronnax, Ben Cross: Capt. Nemo, Julie Cox: Sophie"
+        },
+        "foto": "anos200GrandesTragedias.jpg",
+        "categoria": 5
+    },
+    {
+        "codigo": 9,
+        "nome": "Fantozzi 2000 - The Cloning",
+        "descricao": {
+            "dataLancamento": "1999",
+            "genero": "Comédia",
+            "direcao": "Domenico Saverni",
+            "elenco": "Paolo Villaggio: Rag. Ugo Fantozzi, Milena Vukotić: Pina Fantozzi, Anaa Mazzamauro: Signorina S."
+        },
+        "foto": "fantozzi2000TheCloning.jpg",
+        "categoria": 3
+    }
+]

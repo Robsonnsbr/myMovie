@@ -1,0 +1,109 @@
+<div class="tituloListas">
+  <h1>Editar Filme</h1>
+</div>
+<form>
+  <mat-card>
+    <mat-card-content>
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          placeholder="Nome"
+          name="nome"
+          [(ngModel)]="produto.nome"
+        />
+      </mat-form-field>
+      <div>
+        <label for="imgFoto">Foto</label>
+        <img
+          id="imgFoto"
+          style="cursor: pointer"
+          (click)="fileUpload.click()"
+          src="{{ URL_SERVIDOR_UPLOAD_FOTO + produto.foto }}"
+        />
+        <input
+          type="file"
+          style="display: none"
+          id="fileUpload"
+          #fileUpload
+          class="file-upload"
+          (change)="selecionarFoto($event)"
+        />
+        <button
+          id="btnSelecionar"
+          (click)="fileUpload.click()"
+          mat-raised-button
+          color="primary"
+        >
+          Selecionar
+        </button>
+      </div>
+      <mat-form-field class="campo-pequeno">
+        <mat-label>Categoria</mat-label>
+        <mat-select
+          matNativeControl
+          id="categoria"
+          required
+          name="categoria"
+          [(value)]="produto.categoria.codigo"
+        >
+          <mat-option
+            *ngFor="let categoria of categorias"
+            [value]="categoria.codigo"
+          >
+            {{ categoria.nome }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          placeholder="Data de Lançmento"
+          name="lancamento"
+          [(ngModel)]="produto.descricao.dataLancamento"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          placeholder="Genêro"
+          name="genero"
+          [(ngModel)]="produto.descricao.genero"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          placeholder="Direção"
+          name="direcao"
+          [(ngModel)]="produto.descricao.direcao"
+        />
+      </mat-form-field>
+      <mat-form-field>
+        <input
+          matInput
+          type="text"
+          placeholder="Elenco"
+          name="elenco"
+          [(ngModel)]="produto.descricao.elenco"
+        />
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button
+        mat-raised-button
+        class="btnmyMovie"
+        (click)="atualizarProduto()"
+        color="primary"
+      >
+        Salvar
+      </button>
+      <button mat-raised-button class="btnmyMovie" routerLink="/cadastros">
+        Cancelar
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</form>

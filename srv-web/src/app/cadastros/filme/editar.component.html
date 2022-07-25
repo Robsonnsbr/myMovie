@@ -1,0 +1,38 @@
+<div class="tituloListas">
+  <h1>Filme da Semana</h1>
+</div>
+<form>
+  <mat-card>
+    <mat-card-content>
+      <mat-form-field class="campo-pequeno">
+        <mat-label>Selecionar filme</mat-label>
+        <mat-select
+          matNativeControl
+          id="filme"
+          (selectionChange)="recarregarFilme()"
+          required
+          name="filme"
+          [(ngModel)]="filme.produto.codigo"
+        >
+          <mat-option *ngFor="let produto of produtos" [value]="produto.codigo">
+            {{ produto.nome }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div>
+        <label disabled for="imgFoto">Foto</label>
+        <img
+          id="imgFoto"
+          disabled
+          style="cursor: pointer"
+          src="{{ URL_SERVIDOR_UPLOAD_FOTO + filme.produto.foto }}"
+        />
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="atualizarFilme()" color="primary">
+        Selecionar
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</form>

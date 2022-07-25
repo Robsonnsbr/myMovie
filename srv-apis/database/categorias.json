@@ -1,0 +1,46 @@
+[
+    {
+        "codigo": 1,
+        "nome": "Açào"
+    },
+    {
+        "codigo": 2,
+        "nome": "Aventura"
+    },
+    {
+        "codigo": 3,
+        "nome": "Comédia"
+    },
+    {
+        "codigo": 4,
+        "nome": "Musical"
+    },
+    {
+        "codigo": 5,
+        "nome": "Documentário"
+    },
+    {
+        "codigo": 6,
+        "nome": "Drama"
+    },
+    {
+        "codigo": 7,
+        "nome": "Espionagem"
+    },
+    {
+        "codigo": 8,
+        "nome": "Fantasia"
+    },
+    {
+        "codigo": 9,
+        "nome": "Ficção científica"
+    },
+    {
+        "codigo": 10,
+        "nome": "Romance"
+    },
+    {
+        "codigo": 11,
+        "nome": "Terror"
+    }
+]

@@ -1,0 +1,28 @@
+<section class="cards-catalogo">
+  <mat-card
+    class="card-catalogo"
+    *ngFor="let produto of itensDoCarrinho | async"
+  >
+    <mat-card-header>
+      <div mat-card-avatar class="card-header-image"></div>
+      <mat-card-title>{{ produto.nome }}</mat-card-title>
+      <mat-card-subtitle>{{ produto.nome }}</mat-card-subtitle>
+    </mat-card-header>
+    <div class="zoom">
+      <img
+        style="box-shadow: 0px 0px 15px 5px #000000"
+        class="img-responsive"
+        mat-card-image
+        src="{{ URL_SERVIDOR_UPLOAD_FOTO + produto.foto }}"
+        alt="Foto do produto"
+      />
+    </div>
+    <mat-card-content>
+      <h2>Descrição do Filme</h2>
+      <p>Lançamento: {{ produto.descricao.dataLancamento }}</p>
+      <p>Genêro: {{ produto.descricao.genero }}</p>
+      <p>Direção: {{ produto.descricao.direcao }}</p>
+      <p>Elenco: {{ produto.descricao.elenco }}</p>
+    </mat-card-content>
+  </mat-card>
+</section>

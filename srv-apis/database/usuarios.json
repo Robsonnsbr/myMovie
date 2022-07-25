@@ -1,0 +1,10 @@
+[
+    {
+        "codigo": 1,
+        "perfil": 1,
+        "nome": "Robson",
+        "email": "robsonnsbr@gmail.com",
+        "senha": "Senha123",
+        "dtaCriacao": "2022-07-24"
+    }
+]

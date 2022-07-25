@@ -1,0 +1,9 @@
+div > a.itens {
+  display: inline-block;
+  color: rgb(255, 255, 255) !important;
+  font-size: 15px !important;
+}
+
+div > a.itens:hover {
+  color: #f7941e !important;
+}
