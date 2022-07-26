@@ -127,7 +127,7 @@ main > app-catalogo > section > mat-card {
   max-width: 270px !important;
   display: flex !important;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 main > app-home > section {
